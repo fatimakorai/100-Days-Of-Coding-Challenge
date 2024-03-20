@@ -1,0 +1,35 @@
+//Question 49: Function with Rest Parameters: Write a function that takes a rest parameter representing multiple hobbies. It should log each hobby with a statement saying you enjoy that hobby.
+
+// Defines a function that accepts multiple hobbies as arguments
+function logHobbies(...hobbies: string[]) {
+    // Loops through each hobby in the array
+    hobbies.forEach(hobby => {
+        // Logs a statement for an each hobby
+        console.log(`I enjoy ${hobby}.`);
+    });
+}
+
+// Calls the function with three hobbies
+// logHobbies("reading", "writing", "coding");
+
+//Question 50: Multiline Template Literals: Use template literals to create a multiline string that describes your ideal day. Include at least three different activities.
+
+let myActivites = 
+`Today I listened one podcast.', '
+I wrote about how I spent a day today', 
+'I recite a Quran Kareem`;
+
+console.log(myActivites);
+
+//Question 51: Refactoring to Arrow Functions: Take a simple function that calculates the area of a rectangle and refactor it into an arrow function.
+
+// Original function for calculating the area of a rectangle
+function calculateArea(width: number, height: number): number {
+    return width * height;
+}
+
+// Refactored into an arrow function
+let calculateAreaArrow = (width: number, height: number): number => width * height;
+
+// Example usage of the arrow function
+console.log(calculateAreaArrow(5, 7)); // Logs the area of the rectangle
